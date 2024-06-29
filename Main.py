@@ -33,7 +33,7 @@ def Check_Extensions(directory, file_extension):
 
     return matching_files
 
-def clear_exes():
+def clear_exes() -> None:
     exe_files = Check_Extensions(Get_Local_Temp(), ".exe")
     for path in exe_files:
         os.remove(path)
